@@ -7,11 +7,11 @@ You are welcome to use any of the trained models,
 -	model_scratch3.pt.gz with 84% test precision.
 Unfortunately, you must run the training process to generate them. 
 
-**NOTE** The datasets are quite large and are not stored alongside this repository. They can be downloaded from the [dog] (https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip) and [human] (http://vis-www.cs.umass.edu/lfw/lfw.tgz) repositories. Unzip the dog dataset and place it at location `path/to/dog-project/dogImages`, similarly unzip the human dataset and place it at the location `path/to/dog-project/lfw`.
+**NOTE** The datasets are quite large and are not stored alongside this repository. They can be downloaded from the [dog](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip) and [human](http://vis-www.cs.umass.edu/lfw/lfw.tgz) repositories. Unzip the dog dataset and place it at location `path/to/dog-project/dogImages`, similarly unzip the human dataset and place it at the location `path/to/dog-project/lfw`.
 
 All the code was built with [Pytorch]( https://pytorch.org/). Models were trained using a GPU equipped architecture. Amazon web services provide EC2 GPU instances, for a cost.   
 
 I want to express my appreciation to:
 -	Yiwen(Owen) H (my mentor)
--	And to the community of reviewers.
+-	And to the Udacity community of reviewers.
 
