@@ -9,5 +9,6 @@ To facilitate the search for information, a synopsis summarizing the problem des
 | Problem name             | Problem class  | Problem                                              | Heuristic               |
 |--------------------------|----------------|------------------------------------------------------|-------------------------|
 | [Bike sharing](bike_sharing/)| Prediction     | Given a time instance, predict the bike sharing load | FNN                     |
-| [Dog breed classification](dog_breed/) | Classification | Given a dog image, predict is breed class            | CNN + transfer learning |
+| [Dog breed classification](dog_breed/) | Classification | Given a dog image, predict is breed class  | CNN + transfer learning |
+| [TV Script generation](tv_script/) | Prediction | Given a character, predict the persons lines       | RNN |
 
