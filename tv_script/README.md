@@ -6,8 +6,7 @@ The model was retrained with the following hyper-parameters:
 
 |Batch size|Embedding dimension|Learning rate|Loss|Example output |
 |:----:|:----:|:----:|:----:|:----|
-| 100 | 128 | 0.01 | 4.52| jerry: what about me?<br>jerry: i don't have to wait.<br>kramer:(to the sales table)<br>elaine:(to jerry) hey, look at this, i'm a good doctor.<br>
-newman:(to elaine) you think i have no idea of this...<br>elaine: oh, you better take the phone, and he was a little nervous.<br>kramer:(to the phone) hey, hey, jerry, i don't want to be a little bit.(to kramer and jerry) you can't.<br>jerry: oh, yeah. i don't even know, i know.<br>jerry:(to the phone) oh, i know.<br>kramer:(laughing) you know...(to jerry) you don't know.
+| 100 | 128 | 0.01 | 4.52| jerry: what about me?<br>jerry: i don't have to wait.<br>kramer:(to the sales table)<br>elaine:(to jerry) hey, look at this, i'm a good doctor.<br>newman:(to elaine) you think i have no idea of this...<br>elaine: oh, you better take the phone, and he was a little nervous.<br>kramer:(to the phone) hey, hey, jerry, i don't want to be a little bit.(to kramer and jerry) you can't.<br>jerry: oh, yeah. i don't even know, i know.<br>jerry:(to the phone) oh, i know.<br>kramer:(laughing) you know...(to jerry) you don't know.
 | 256 | 200 | 0.001 | |
 | 512 | 200 | 0.001 | |
 
