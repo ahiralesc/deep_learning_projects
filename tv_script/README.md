@@ -6,58 +6,8 @@ The model was retrained with the following hyper-parameters:
 
 |Batch size|Embedding dimension|Learning rate|Loss|Example output |
 |:----:|:----:|:----:|:----:|:----|
-| 100 | 128 | 0.01 | 4.52| jerry: what about me?<br>jerry: i don't have to wait.<br>kramer:(to the sales table)<br>elaine:(to jerry) hey, look at this, i'm a good doctor.<br>newman:(to elaine) you think i have no idea of this...<br>elaine: oh, you better take the phone, and he was a little nervous.<br>kramer:(to the phone) hey, hey, jerry, i don't want to be a little bit.(to kramer and jerry) you can't.<br>jerry: oh, yeah. i don't even know, i know.<br>jerry:(to the phone) oh, i know.<br>kramer:(laughing) you know...(to jerry) you don't know.
-| 256 | 200 | 0.001 | 4.05|jerry: i know, i think i have it, you know, i know, you don't know, i can't go.
-
-jerry:(still to the phone) hey!
-
-george: yeah. i don't know. i know, i can't have it.
-
-george:(to the table) hey, you want to do?
-
-kramer: i don't know, it's a big.
-
-elaine:(to the phone) well, i don't know, but i know what you have.
-
-jerry:(to george) yeah.
-
-george: oh, well, i don't know, i'm not not gonna have to go to the way.
-
-elaine: i know, i'm not gonna be the whole thing, i'm going to be the best. i don't know...(hangs up) i know, i'm not going out with a lot of one.
-
-kramer: yeah.
-
-kramer:(smiling) what happened to you?
-
-kramer: well i think i have no idea.
-
-jerry: i don't want to get up. i know. i know.
-
-jerry:(to jerry) what is it?
-
-kramer: yeah.
-
-jerry:(to george) oh!
-
-george:(to the bathroom) yeah.
-
-jerry: well, you don't have to be a big....... i know what i have to do.(jerry leaves,)
-
-jerry: well, i can't go.
-
-george:(to elaine) i think i have a good thing.
-
-george:(to the phone) yeah.
-
-george: i don't know, i don't know, you know.
-
-kramer: yeah. i know, i know i don't even have to get a few.
-
-jerry: oh, i'm not going to go.
-
-jerry: i know, i'm not gonna do the car, you know what i mean. i know you don't know.
-
-george:(looking to george) i got this.|
+| 100 | 128 | 0.01 | 4.52| |
+| 256 | 200 | 0.001 | 4.05| jerry: i know, i think i have it, you know, i know, you don't know, i can't go.<br>jerry:(still to the phone) hey!<br>george: yeah. i don't know. i know, i can't have it.<br>george:(to the table) hey, you want to do?<br>kramer: i don't know, it's a big.<br>elaine:(to the phone) well, i don't know, but i know what you have.<br>jerry:(to george) yeah.<br>george: oh, well, i don't know, i'm not not gonna have to go to the way.<br>elaine: i know, i'm not gonna be the whole thing, i'm going to be the best. i don't know...(hangs up) i know, i'm not going out with a lot of one.<br>kramer: yeah.<br>kramer:(smiling) what happened to you?<br>kramer: well i think i have no idea.<br>jerry: i don't want to get up. i know. i know.<br>jerry:(to jerry) what is it?<br>kramer: yeah.<br>jerry:(to george) oh!<br>george:(to the bathroom) yeah.<br>jerry: well, you don't have to be a big....... i know what i have to do.(jerry leaves,)<br>jerry: well, i can't go.<br>george:(to elaine) i think i have a good thing.<br>george:(to the phone) yeah.<br>george: i don't know, i don't know, you know.<br>kramer: yeah. i know, i know i don't even have to get a few.<br>jerry: oh, i'm not going to go.<br>jerry: i know, i'm not gonna do the car, you know what i mean. i know you don't know.<br>george:(looking to george) i got this.|
 | 512 | 200 | 0.001 | 0.0 | |
 
 
