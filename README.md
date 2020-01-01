@@ -11,5 +11,5 @@ To facilitate the search for information, a synopsis summarizing the problem des
 | [Bike sharing](bike_sharing/)| Prediction     | Given a time instance, predict the bike sharing load | FNN                     |
 | [Dog breed classification](dog_breed/) | Classification | Given a dog image, predict is breed class  | CNN + transfer learning |
 | [TV Script generation](tv_script/) | Prediction | Given a character, predict the persons lines       | RNN |
-| [Face generation](faces/)] | Deep Convolutional Generative Adversarial Network for generating faces | DCGAN |
+| [Face generation](faces/) | Deep Convolutional Generative Adversarial Network for generating faces | DCGAN |
 
