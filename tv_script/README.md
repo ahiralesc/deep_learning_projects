@@ -19,13 +19,13 @@ The hyperparameters that produced the smallest error were the following
 | Batch size | 512 |
 | Number of Epochs | 12 |
 | Learning rate | 0.001 |
-| Vocabulary size | $\left | V \right |$ |
-| Output size | $\left | V \right |$ |
+| Vocabulary size | \| V \| |
+| Output size | \| V \| |
 | Embedding size | 300 |
 | Hidden layer dimension | 256 |
 | Number of RNN layers | 2 |
 
-With $\left | V \right |$ is the size of the vocabulary.
+With \| V \| is the size of the vocabulary.
 
 
 All the code was built with [Pytorch]( https://pytorch.org/). Models were trained using a GPU equipped architecture. Amazon web services provide EC2 GPU instances, for a cost.   
