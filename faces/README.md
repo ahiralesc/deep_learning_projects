@@ -1,6 +1,10 @@
 ## Deep Convolutional Generative Adversarial Network (DCGAN)
 
-Welcome, I built this notebook while studying the AI nanodegree from Udacity. This notebook addresses training of an Deep Convolutional Generative Adversarial Network (DCGAN) using the [CelebFaces Attributes Dataset ](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) (CelebA). Image sizes are 64x64x3 RGB. The architecture that produced best results is summarized in Table I. 
+Welcome, I built this notebook while studying the AI nanodegree at Udacity. A Deep Convolutional Generative Adversarial Network (DCGAN) is built and trained using the [celebrity face attributes dataset](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html). The heuristic trains two neural networks concurrently, a generator and a discriminator. The generator aim is to learn how to create new photos with similar statistical distribution as the training set, while the discriminator job is to learn to differentiate between real and fake photos. Early in the learning process, the generator is forced to change its learning strategy since the discriminator continuously detects fake photos. Progressively, the generator learns to produce higher quality photos that ultimately pass as real. Thus, fooling the discriminator. In the context of neural networks, such learning principle was applied by Ian Goodfellow et. al in 2014 as a framework for estimating generative models via adversarial networks. See paper [generative adversarial nets]( https://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf).
+
+DCGANs have a much broader scope of application than producing fake photos, such as: improving the quality of existing classifiers, by training them on new synthetic datasets; the creation of content generative models for audio and image (and perhaps other classes of data). I’m sure new application domains will continue to emerge.  
+
+Returning to the problem at hand. Both the generator and discriminator were trained on small size images, 64x64x3 RGB. However, if the model is improperly design, training can it can be can be painstakingly time-consuming and difficult. It is always wise to learn both from mistakes and success, thus I also report some of failed network and hyper-parameter configurations. Table I summarizes the architecture of the successful network. See their configuration setup in the jupyter notebook. 
 
 <center> Table I. DCGAN architecture .</center> 
 
@@ -12,15 +16,18 @@ Welcome, I built this notebook while studying the AI nanodegree from Udacity. Th
 |4| ConvTranspose2d -> BatchNorm2d | Linear|
 |5| ConvTranspose2d -> BatchNorm2d | Dropout|
 
-See fine grain details in the notebook. Hyper-parameter tuning was challenging. At first experiments took up to eight hours. The reviewer comets helped increased the quality of results. Leaky ReLU alleviates the problem of sparse gradients. Custom weight initialization accelerate the learning process. Dropout helped balanced dominance between the generator and discriminator. Final hyper-parameters are summarized in Table II.
+The network architecture is useless without proper hyper-parameter tuning. Hyper-parameter tuning sometimes fields like a dark art because, to my knowledge, there is no analytical approach to find an optimal configuration analytically. Thus, very often, the experimenter has to turn to best practices know to date. To be honest, I spent a lot of time on training the network. The reviewer comments really helped a lot and probably saved me a significant amount of time and frustration scavenging research papers for hints on what to do. Among the most important observations on tuning I learned the following:
 
-<center> Table I. DCGAN hyper-parameters.</center> 
+- Leaky ReLU alleviates the problem of sparse gradients. 
+- Custom weight initialization accelerates the learning process. 
+- Dropout helped balanced dominance between the generator and discriminator. 
 
-Hyperparameter tuning was challenging.
+The hyper-parameters that produced the best results are summarized in Table II.
+
+<center> Table II. DCGAN hyper-parameters.</center> 
 
 |Layer | Generator | Discriminator |
 |:-------|:---------------|:---------------|
-|Batch size|64| 64 | 
 |Dropout| 0.5 | 0.5 |
 |Convolution dimension| 32 | 32 |
 |Linear layer size| 100 | 100 |
@@ -28,12 +35,16 @@ Hyperparameter tuning was challenging.
 |Learning rate | 0.0003 | 0.0003 |
 |Number of epochs |  30 |  30 |
 
-An error of 1.14 and 2.53 was achieved for the discriminator and generator correspondingly. The generated images are shown next.
+Other parameter include: batch size of 64; the network was tested with 10, 20, and 30 epochs. The quality of the resulting images did not degradate significantly as the number of epochs increased. The following figures shows the resulting images using 10 and 30 epochs.
 
-![Fig 1. First experiment learning error](img/exp4.png)
+![Fig 1. DCGAN generator photos using 30 epochs](img/fig5.png)
 
-Previous networks did not include weight initialization, dropout, and use instance initialization instead batch normalization. I also used batch size of 20, 32, and 16. Finally, both the generator and discriminator included one more convolutional layer.
-)
+![Fig 2. DCGAN generator photos using 10 epochs](img/fig4.png)
+
+The discriminator and generator learning error for the 30 epoch experiment is illustrated in the following figure.
+
+![Fig 3. Generator and discriminator error using 30 epochs](img/fig6.png)
+
 
 
 
