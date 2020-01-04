@@ -54,8 +54,18 @@ The discriminator and generator learning error for the 30-epoch experiment is il
 
 The error values were produce each 100 iterations, this explains why there are so few data points in Fig. 3. Both the generator and discriminator find a compromise in early training and maintain it during later epochs. This behavior did not occur until dropout and weight initialization were included.   
 
+## Previous results
+
+The intent of this section is to learn from my mistakes. My initial network architecture included one more ConvTranspose2d -> BatchNorm2d in both the generator and discriminator. Instance normalization was used instead of batch normalization. Dropout was not used. Tested hiper-parameters include: beta (0.1, 0.999), learning rate of 0.01, 0.001, and 0.002, discriminator and generator convolution dimensions 64, linear layer size of 120, and batch sizes of 16, 20, 32, and 64 were tested. Results were bad. I do not post all experiment results. Only the following example:
+
+<center> Fig. 4. DCGAN generator photos using 30 epochs, batch size 32, beta1 0f 0.2 and learning rate of 0.003.</center> 
+
+![Fig 4. DCGAN generator photos using 30 epochs, ](img/fig3.png)
 
 
+<center> Fig. 5. Generator and discriminator error using 30 epochs.</center> 
+
+![Fig 5. Generator and discriminator error using 30 epochs](img/fig2.png)
 
 
 All the code was built with [Pytorch]( https://pytorch.org/). Models were trained using a GPU equipped architecture. Amazon web services provide EC2 GPU instances, for a cost.   
