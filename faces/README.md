@@ -37,13 +37,23 @@ The hyper-parameters that produced the best results are summarized in Table II.
 
 Other parameter include: batch size of 64; the network was tested with 10, 20, and 30 epochs. The quality of the resulting images did not degradate significantly as the number of epochs increased. The following figures shows the resulting images using 10 and 30 epochs.
 
+
+<center> Fig. 1. DCGAN generator photos using 30 epochs.</center> 
+
 ![Fig 1. DCGAN generator photos using 30 epochs](img/fig5.png)
+
+<center> Fig. 2. DCGAN generator photos using 10 epochs.</center> 
 
 ![Fig 2. DCGAN generator photos using 10 epochs](img/fig4.png)
 
-The discriminator and generator learning error for the 30 epoch experiment is illustrated in the following figure.
+The discriminator and generator learning error for the 30-epoch experiment is illustrated in the following figure.
+
+<center> Fig. 3. Generator and discriminator error using 30 epochs.</center> 
 
 ![Fig 3. Generator and discriminator error using 30 epochs](img/fig6.png)
+
+The error values were produce each 100 iterations, this explains why there are so few data points in Fig. 3. Both the generator and discriminator find a compromise in early training and maintain it during later epochs. This behavior did not occur until dropout and weight initialization were included.   
+
 
 
 
