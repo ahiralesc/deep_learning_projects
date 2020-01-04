@@ -67,6 +67,7 @@ The intent of this section is to learn from my mistakes. My initial network arch
 
 ![Fig 5. Generator and discriminator error using 30 epochs](img/fig2.png)
 
+Error values were printed every 50 points. 
 
 All the code was built with [Pytorch]( https://pytorch.org/). Models were trained using a GPU equipped architecture. Amazon web services provide EC2 GPU instances, for a cost.   
 
