@@ -16,4 +16,4 @@ Many of the projects are embedded in a Jupiter notebook. For those where experim
 | [TV Script generation](tv_script/) | Prediction | Given a character, predict the persons lines       | RNN |
 | [Face generation](faces/) | Deep Convolutional Generative Adversarial Network for generating faces | Given a set face dataset, train a generative model to produce fake faces | DCGAN |
 | [Multiclass classification](cohort/) | Prediction | Multilabel text classification. Given a narrative of a patient medical stated predict 13 health outcomes (in working process)| Multiclass text classification |
-| [The hidden message](autoencoder/)|Generative|Given an encoded message, create a decoder capable of decoding the encoded message|AE (Auto-Encoder)|
+| [The hidden message](hidden_msg/)|Generative|Given an encoded message, create a decoder capable of decoding the encoded message|AE (Auto-Encoder)|
